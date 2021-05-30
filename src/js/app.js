@@ -91,6 +91,7 @@ class userView {
   #repositories = document.getElementById("repositories");
   #repoCount = document.getElementById("repoCount");
   #repoCountMobile = document.getElementById("repoCountMobile");
+  #navAvatar = document.getElementById("profileAvatar");
 
   #data;
 
@@ -100,6 +101,7 @@ class userView {
     this.#repositories.innerHTML = this.#generateRepoMarkup();
     this.#repoCount.textContent = this.#data.repoCount;
     this.#repoCountMobile.textContent = this.#data.repoCount;
+    this.#navAvatar.setAttribute("src", `${this.#data.image}`);
   }
 
   #generateProfileMarkup() {
