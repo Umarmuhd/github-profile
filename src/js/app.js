@@ -11,7 +11,7 @@ const loadProfile = async function (username) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.GITHUB_API_KEY}`,
+        Authorization: `Bearer ${process.env}`,
       },
       body: JSON.stringify({
         query: `
