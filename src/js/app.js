@@ -11,7 +11,7 @@ const loadProfile = async function (username) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env}`,
+        Authorization: `Bearer ${process.env.API_KEY}`,
       },
       body: JSON.stringify({
         query: `
