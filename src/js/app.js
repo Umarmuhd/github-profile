@@ -45,6 +45,10 @@ const loadProfile = async function (username) {
                 updatedAt
                 stargazerCount
                 description
+                primaryLanguage{
+                  color
+                  name
+                }
               }
               pageInfo {
                 hasNextPage
@@ -212,7 +216,9 @@ class userView {
 
       <div class="repo-short">
         <span class="repo-lang">
-          <span class="repo-lang-color"></span> SCSS
+          <span class="repo-lang-color" style="background: ${
+            repo.primaryLanguage.color
+          }"></span> ${repo.primaryLanguage.name}
         </span>
         <span class="repo-update"> Updated ${this.convertDate(
           repo.updatedAt
