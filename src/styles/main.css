@@ -1,0 +1,235 @@
+main {
+  padding: 0 0.5em;
+}
+main .tabs-container {
+  display: none;
+}
+
+main .container.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+main .sidebar {
+  padding: 0 0.5em;
+  margin-bottom: 1.5em;
+}
+
+main .names-image {
+  display: flex;
+  padding: 1em 0;
+}
+
+main .names-image .image {
+  width: 17.67%;
+  display: flex;
+  align-items: center;
+  padding-right: 0.8em;
+}
+main .names-image .image img {
+  border-radius: 50% !important;
+  display: inline-block;
+  overflow: hidden;
+  line-height: 1;
+  vertical-align: middle;
+
+  width: 100%;
+  aspect-ratio: auto 260/260;
+}
+main .names-image .name-username {
+  width: 82.33%;
+}
+main .names-image h1.name {
+  font-size: 1.625rem;
+  line-height: 1.5em;
+  margin: 0;
+  color: #24292e;
+  font-weight: 600;
+}
+main .names-image p {
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.2em;
+  margin: 0;
+  color: #586069;
+}
+
+.profile .fol-udetails {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.profile .fol-udetails .user-details {
+  margin-bottom: 0.5em;
+}
+
+.profile .fol-udetails .user-details li {
+  font-size: 0.875rem;
+  line-height: 1.5em;
+  margin-bottom: 0.2em;
+  display: flex;
+  align-items: center;
+}
+.profile .fol-udetails .user-details li span {
+  color: #24292e;
+}
+.profile .fol-udetails .user-details li a {
+  text-decoration: none;
+}
+.profile .fol-udetails .user-details li img {
+  padding-right: 0.3em;
+}
+.profile .fol-udetails .followings-stars .d-flex {
+  display: flex;
+}
+.profile .fol-udetails .followings-stars .d-flex div {
+  display: flex;
+  align-items: center;
+  padding-right: 0.3em;
+  color: #586069;
+  font-size: 0.875rem;
+  line-height: 1.5em;
+}
+.profile .fol-udetails .followings-stars .d-flex span {
+  padding: 0 0.3em;
+  font-weight: 600;
+  color: #24292e;
+}
+.profile .fol-udetails .followings-stars .d-flex a {
+  text-decoration: none;
+}
+
+.right-col .mobile-tabs-navbar {
+  overflow-x: hidden;
+}
+.right-col .mobile-tabs-navbar ul {
+  display: flex;
+  overflow-x: scroll;
+}
+.right-col .mobile-tabs-navbar li {
+  padding: 0.52em 1.13em;
+  display: flex;
+}
+
+.right-col .mobile-tabs-navbar a {
+  text-decoration: none;
+  line-height: 1.429em;
+  font-size: 0.875rem;
+}
+.right-col .mobile-tabs-navbar li.active {
+  border-bottom: #f9826c 2px solid;
+}
+.right-col .mobile-tabs-navbar li.active a {
+  text-decoration: none;
+  line-height: 1.429em;
+  font-size: 0.875rem;
+  color: #24292e;
+  font-weight: 600;
+}
+.right-col .mobile-tabs-navbar a span {
+  background: #d1d5da80;
+  margin-left: 0.286em;
+
+  min-width: 20px;
+  padding: 0 0.5em;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.5em;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 2em;
+}
+
+.right-col .content.repo form {
+  padding: 1em 0;
+}
+.right-col .repo form .d-flex {
+  display: flex;
+  flex-direction: column;
+}
+.right-col .repo form .search-repo {
+  margin-bottom: 0.25rem !important;
+}
+
+.right-col .repo form .search-repo input {
+  width: -webkit-fill-available;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: block;
+  margin: 0 auto;
+
+  font-size: 0.875rem;
+  line-height: 1.429em;
+  color: #24292e;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  outline: none;
+  box-shadow: var(--color-shadow-inset);
+  padding: 5px 12px;
+}
+.repo-list li {
+  padding: 1.5rem 0;
+  display: flex;
+  border-top: 1px solid #eaecef;
+}
+.repo-list li .right {
+  display: flex;
+  width: 16.67%;
+}
+.repo-list li .left {
+  display: flex;
+  flex-direction: column;
+  width: 83.33%;
+}
+.repo-list li h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.2em;
+}
+.repo-list li h3 a {
+  text-decoration: none;
+  color: #0366d6;
+}
+.repo-list li h3 a:hover {
+  text-decoration: underline;
+  color: #0366d6;
+}
+.repo-list li .repo-desc {
+  padding-bottom: 0.57em;
+}
+.repo-list li p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #586069;
+  width: 80%;
+}
+.repo-list li .repo-short {
+  margin-top: 0.67em;
+  font-size: 0.75rem;
+  line-height: 1.5em;
+  color: #586069;
+  width: 80%;
+}
+.repo-list li .repo-short .repo-lang {
+  margin-right: 1em;
+}
+
+.repo-list li .right {
+  display: flex;
+  align-items: center;
+}
+.repo-list li .right button {
+  display: flex;
+  align-items: center;
+  padding: 3px 12px;
+  font-size: 12px;
+  line-height: 20px;
+  background: #fafbfc;
+  border: 1px solid;
+  border-color: #1b1f2326;
+  box-shadow: 0 1px 0 rgba(27, 31, 35, 0.04);
+
+  border-radius: 6px;
+}

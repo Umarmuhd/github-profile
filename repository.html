@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Repositories</title>
+
+    <link rel="stylesheet" href="src/styles/repository.css" />
+    <link rel="stylesheet" href="src/styles/navbar.css" />
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <link rel="stylesheet" href="src/styles/main-desktop.css" />
+
+    <script src="src/js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="container">
+        <a class="logo" href="#">
+          <img src="src/images/logo.svg" alt="github" />
+        </a>
+
+        <img
+          id="mobile-cta"
+          class="mobile-menu"
+          src="src/images/menu.svg"
+          alt="Open Navigation"
+        />
+
+        <nav>
+          <img
+            id="mobile-exit"
+            class="mobile-menu-exit"
+            src="src/images/exit.svg"
+            alt="Close Navigation"
+          />
+
+          <ul class="primary-nav">
+            <li>
+              <form action="/" method="post">
+                <label for="githubSearchBar">
+                  <input
+                    type="text"
+                    class="search-text"
+                    placeholder="Search or jump to..."
+                    autocomplete="off"
+                    id="githubSearchBar"
+                  />
+                  <a href="#" class="search-btn"
+                    ><img src="src/images/search-key-slash.svg" alt="search"
+                  /></a>
+                </label>
+              </form>
+            </li>
+            <li><a href="#">Pull requests</a></li>
+            <li><a href="#">Issues</a></li>
+            <li><a href="#">Codespaces</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Explore</a></li>
+          </ul>
+
+          <ul class="secondary-nav">
+            <li>
+              <a href="#"
+                ><img src="src/images/bell.svg" alt="notifications"
+              /></a>
+            </li>
+            <li class="plus">
+              <details>
+                <summary><img src="src/images/plus.svg" alt="new" /></summary>
+                <ul class="new-list">
+                  <li><a href="#">New repository</a></li>
+                  <li><a href="#">Import repository</a></li>
+                  <li><a href="#">New gist</a></li>
+                  <li><a href="#">New organization</a></li>
+                  <li><a href="#">New project</a></li>
+                </ul>
+              </details>
+            </li>
+            <li class="go-premium-cta">
+              <details>
+                <summary>
+                  <img src="" alt="profile image" />
+                </summary>
+                <div><p>Signed in as Umarmuhd</p></div>
+                <div>
+                  <form action="/" method="post"><input type="text" /></form>
+                </div>
+                <ul class="user">
+                  <li><a href="#">Your profile</a></li>
+                  <li><a href="#">Your repositories</a></li>
+                  <li><a href="#">Your codespaces</a></li>
+                  <li><a href="#">Your organizations</a></li>
+                  <li><a href="#">Your projects</a></li>
+                  <li><a href="#">Your stars</a></li>
+                  <li><a href="#">Your gists</a></li>
+                </ul>
+                <ul class="actions">
+                  <li><a href="#">Upgrade</a></li>
+                  <li><a href="#">Feature preview</a></li>
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Settings</a></li>
+                </ul>
+                <div>
+                  <a href="#">Sign out</a>
+                </div>
+              </details>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <main>
+      <div class="tabs-container">
+        <div class="content">
+          <div class="left">
+            <div class="space"></div>
+          </div>
+          <div class="right">
+            <div class="tabs-navbar">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="src/images/overview.svg"
+                      alt="overview"
+                    />Overview</a
+                  >
+                </li>
+                <li class="active">
+                  <a href="#"
+                    ><img
+                      src="src/images/repository.svg"
+                      alt="repositories"
+                    />Repositories<span id="repoCount">46</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="src/images/project.svg"
+                      alt="projects"
+                    />Projects</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="src/images/packages.svg"
+                      alt="packages"
+                    />Packages</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main container d-flex">
+        <div class="left-col sidebar" id="profile">
+          <div class="profile">
+            <div class="bio">
+              <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="fol-udetails">
+              <div class="followings-stars">
+                <div class="d-flex">
+                  <div class="followers">
+                    <img src="src/images/users.svg" alt="followers" />
+                    <span>17</span>
+                    <a href="#">Followers</a>
+                  </div>
+                  <div class="following">
+                    &#x2219;
+                    <span>29</span>
+                    <a href="#">Following</a>
+                  </div>
+                  <div class="stars">
+                    &#x2219;
+                    <img src="src/images/star.svg" alt="stars" />
+                    <span>94</span>
+                    <a href="#">Stars</a>
+                  </div>
+                </div>
+              </div>
+              <ul class="user-details">
+                <li class="current-company">
+                  <img src="src/images/organisation.svg" alt="company name" />
+                  <span>SmartBukites</span>
+                </li>
+                <li class="current-location">
+                  <img src="src/images/location.svg" alt="location name" />
+                  <span>Kano, Nigeria</span>
+                </li>
+                <li class="email-address">
+                  <img src="src/images/mail.svg" alt="email address" />
+                  <a href="mailto:umarfarouqft@gmail.com" target="_blank"
+                    >umarfarouqft@gmail.com</a
+                  >
+                </li>
+                <li class="user-websites">
+                  <img src="src/images/link.svg" alt="user website" />
+                  <a href="https://umarmuhammad.me" target="_blank"
+                    ><span>umarmuhammad.me</span></a
+                  >
+                </li>
+                <li class="twitter-username">
+                  <img src="src/images/twitter.svg" alt="twitter username" />
+                  <a href="http://twitter.com/mhstr_unique" target="_blank"
+                    ><span>@mhstr_unique</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right-col body">
+          <div class="mobile-tabs-navbar">
+            <ul>
+              <li>
+                <a href="#">Overview</a>
+              </li>
+              <li class="active">
+                <a href="#">Repositories<span id="repoCountMobile">46</span></a>
+              </li>
+              <li>
+                <a href="#">Projects</a>
+              </li>
+              <li>
+                <a href="#">Packages</a>
+              </li>
+            </ul>
+          </div>
+          <div class="content repo">
+            <form action="/">
+              <div class="d-flex">
+                <div class="search-repo">
+                  <input type="text" placeholder="Find a repository..." />
+                </div>
+              </div>
+            </form>
+            <div class="repositories" id="repositories">
+              <!-- <ul class="repo-list">
+                <li class="repo-item">
+                  <div class="left">
+                    <h3 class="repo-title">
+                      <a href="#">SmartBukites-LMS</a>
+                    </h3>
+                    <div class="repo-desc">
+                      <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="repo-short">
+                      <span class="repo-lang">
+                        <span class="repo-lang-color"></span> SCSS
+                      </span>
+                      <span class="repo-update"> Updated on 4 Sept </span>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="star-repo">
+                      <form action="/" method="put">
+                        <button type="submit">
+                          <input type="checkbox" name="star" id="star" /> 
+                          <img src="src/images/star-repo.svg" alt="star repo" />
+                          Star
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+              </ul>  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+:root {
+  --color-text-link: #56a6ff;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+a {
+  color: #444444;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 2em;
+}
+
+@media only screen and (min-width: 1080px) {
+  section {
+    padding: 10em 4em;
+  }
+}

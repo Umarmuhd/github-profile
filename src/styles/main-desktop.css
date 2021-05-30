@@ -1,0 +1,136 @@
+@media only screen and (min-width: 768px) {
+  main {
+    max-width: 1240px;
+    margin: 1.5em auto 0;
+    padding: 0 2em;
+  }
+
+  main .tabs-container {
+    display: unset;
+  }
+  main .tabs-container .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2em;
+  }
+  main .tabs-container .content .left {
+    width: 25%;
+    padding: 0 1em;
+  }
+
+  main .names-image .image a {
+    display: flex;
+    justify-content: center;
+  }
+  main .names-image .image img {
+    max-width: 278px;
+  }
+  main .tabs-container .content .right {
+    width: 75%;
+    padding: 0 1em;
+  }
+  main .tabs-container .content .right ul {
+    display: flex;
+  }
+  main .tabs-container .content .right a {
+    padding: 0.57em 1.143em;
+    font-size: 0.875rem;
+    line-height: 2.14em;
+    color: #24292e;
+    text-align: center;
+    white-space: nowrap;
+    background-color: initial;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  main .tabs-container .content .right li.active a {
+    font-weight: 600;
+    color: #24292e;
+    border-bottom-color: #f9826c;
+    outline: 1px dotted transparent;
+    outline-offset: -1px;
+  }
+  main .tabs-container .content .right a img {
+    margin-right: 4px;
+  }
+  main .tabs-container .content .right a span {
+    margin-left: 4px;
+    background: #d1d5da80;
+    display: inline-block;
+    min-width: 20px;
+    padding: 0 0.5em;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1.5em;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 2em;
+
+    color: #24292e;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+
+  main .main.d-flex {
+    flex-direction: unset;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 2em;
+  }
+
+  .main .sidebar {
+    width: 25%;
+    padding: 0 1em;
+    margin-bottom: 0;
+  }
+
+  .main .right-col.body {
+    width: 75%;
+    padding: 0 1em;
+    margin-bottom: 0;
+  }
+
+  main .names-image {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  main .names-image .image {
+    width: 100%;
+
+    display: inline-block !important;
+    padding-right: 0;
+  }
+
+  main .names-image .name-username {
+    width: 100%;
+    padding: 1em 0 0;
+  }
+
+  .profile .fol-udetails {
+    flex-direction: column;
+  }
+
+  .profile .fol-udetails .user-details {
+    margin-bottom: 0;
+  }
+  .profile .fol-udetails .followings-stars {
+    margin-bottom: 1em;
+  }
+
+  .right-col .mobile-tabs-navbar {
+    display: none;
+  }
+
+  .repo-list li .left h3 {
+    margin-top: 0;
+  }
+  .repo-list li .right {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+  }
+}
