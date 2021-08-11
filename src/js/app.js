@@ -1,3 +1,5 @@
+import GITHUB_API_KEY from "./config.js";
+
 /////////////////////////////////////
 //Model
 const state = {
@@ -11,7 +13,7 @@ const loadProfile = async function (username) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.GITHUB_API_KEY}`,
+        Authorization: `Bearer ${GITHUB_API_KEY}`,
       },
       body: JSON.stringify({
         query: `
